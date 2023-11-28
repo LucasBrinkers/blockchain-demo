@@ -11,11 +11,13 @@ block content
           label.col-sm-2.control-label(for='data') #{__('Data')}:
           .col-sm-10
             textarea#data.form-control(rows='10')
+            small #{__('Data desc')}
 
         .form-group
           label.col-sm-2.control-label(for='hash') #{__('Hash')}:
           .col-sm-10
             input#hash.form-control(type='text', disabled)
+            small #{__('Hash desc')}
 
   script.
     function getText(block, chain) {

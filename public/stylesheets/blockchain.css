@@ -5,11 +5,43 @@ html {
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100%;
+  color: white;
+  background-color: rgb(0, 0, 50);
+  background-image: radial-gradient(circle at 100% 125%, rgb(255, 165, 0) 8%, rgb(128, 0, 128) 40%, rgb(0, 0, 50));
+  background-attachment: fixed;
 }
 
-body > .container {
+label {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: -3px -2px 1px rgba(255, 255, 255, 0.3);
+}
+
+a, a:hover, a:focus {
+  color: lightblue;
+}
+
+small {
+  display: block;
+  height: 0em;
+  opacity: 0;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+*:hover > * > small, *:hover + small, small:hover {
+  height: 2em;
+  opacity: 1;
+  transition: opacity 3 ease;
+}
+
+body>.container {
   padding: 60px 15px 0;
 }
 
@@ -17,7 +49,7 @@ body > .container {
   margin: 20px 0;
 }
 
-body > .container-fluid {
+body>.container-fluid {
   padding: 60px 15px 0;
 }
 
@@ -25,16 +57,73 @@ body > .container-fluid {
   margin: 20px 0;
 }
 
+.navbar-inverse {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+  color: #eee;
+}
+
 input {
   font-family: monospace;
 }
 
+.input-group-addon {
+  color: white;
+  background-color: transparent;
+}
+
+.well {
+  position: relative;
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 .well-success {
-  background: rgb(223, 240, 216);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: -5px -5px 0 rgba(72, 255, 0, 1);
 }
 
 .well-error {
-  background: rgb(250, 220, 220);
+  background: rgba(134, 0, 0, 0.2);
+  box-shadow: -5px -5px 0 rgba(248, 56, 56, 1);
+}
+
+.well-error .input-group-addon.validity {
+  font-size: 1.2em;
+  color: rgb(255, 0, 0);
+  border: white;
+  background-color: white;
+}
+
+.well-success .validity::after {
+  content: '✔';
+}
+
+.well-error .validity::after {
+  content: '✗';
+}
+
+.form-control,
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.well-success .form-control,
+.well-error .form-control {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background: transparent;
 }
 
 .github-ribbon {

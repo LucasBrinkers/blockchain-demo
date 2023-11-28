@@ -1,13 +1,40 @@
 extends layout
 
 block content
-  a(href='https://github.com/anders94/blockchain-demo/')
-    img.github-ribbon(src='/images/fork-me-on-github-ribbon.png', alt='Fork me on GitHub')
+  div(id='forkongithub')
+    a(href='https://github.com/lucasbrinkers/blockchain-demo/', target='new', alt='Fork me on GitHub') Fork me on GitHub
   .container
-    h1 Blockchain Demo
-    .embed-responsive.embed-responsive-16by9
-      iframe.embed-responsive-item(src='https://www.youtube.com/embed/_160oMzblY8')
+    h1 #{__('Introduction')}
     br
-    p.pull-right by 
-      a(href='http://andersbrownworth.com/') Anders Brownworth 
-      | 1K3NvcuZzVTueHW1qhkG2Cm3viRkh2EXJp
+
+    h3 #{__('cryptocurrency')}
+    p #{__('cryptocurrency desc')}
+
+    h3 transacties
+    p De uitwisseling van tokens tussen gebruikers.
+
+    h3 #{__('blockchain')}
+    p #{__('blockchain desc')}
+
+    h3 netwerk
+    p De distributie van de blockchain en transactiegegevens
+
+
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    div.pull-right #{__('Application by')} 
+      a(href='http://andersbrownworth.com/') Anders Brownworth
+    br
+    div.pull-right #{__('Improvements by')} 
+      a(href='https://github.com/lucasbrinkers/') Lucas Brinkers
+    br
+    div.pull-right #{__('Favicon by ')} afif fudin  
+      a(href='https://www.flaticon.com/free-icons/tetris') Flaticon

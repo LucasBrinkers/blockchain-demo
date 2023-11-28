@@ -1,5 +1,6 @@
 {
 	"Hash": "Hash",
+	"Hash desc": "This number is the result of a primitive cryptographic hashing function. The hexadecimal format saves space and is easy to read.",
 	"Blockchain Demo": "Blockchain Demo",
 	"Block": "Block",
 	"Blockchain": "Blockchain",
@@ -7,6 +8,7 @@
 	"Tokens": "Tokens",
 	"Coinbase": "Coinbase",
 	"Data": "Data",
+	"Data desc": "Type some data in this box. Notice that the hash field below will update for each keystroke. Can you create a nice looking hash?",
 	"Nonce": "Nonce",
 	"Mine": "Mine",
 	"Prev": "Prev",
@@ -15,5 +17,15 @@
 	"Tx": "Tx",
 	"$": "$",
 	"From": "From",
-	"Coinbase Transactions": "Coinbase Transactions"
+	"Coinbase Transactions": "Coinbase Transactions",
+	"Distributed Blockchain2": "Distributed Blockchain2",
+	"Block desc": "Block desc",
+	"Nonce desc": "Nonce desc",
+	"Block data desc": "Block data desc",
+	"Block hash desc": "Block hash desc",
+	"Introduction": "Introduction",
+	"cryptocurrency": "cryptocurrency",
+	"cryptocurrency desc": "The currency (token) issued as a reward in the proof-of-work mining process.",
+	"blockchain": "blockchain",
+	"blockchain desc": "The public ledger where the network records (transactions) are written."
 }
